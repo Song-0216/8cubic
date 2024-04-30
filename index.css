@@ -54,12 +54,13 @@ form {
 #w-line-1 {
     color: #7f7f7f;
     font-size: 40px;
+    margin-top: 30px;
 }
 
 #w-line-2 {
     color: #9c9c9c;
     font-size: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #input-area {
@@ -69,7 +70,7 @@ form {
 
 .f-inp {
     padding: 12px 25px;
-    border: 2px solid #6e6d6d;
+    border: 2px solid gray;
     line-height: 1;
     border-radius: 20px;
     margin-bottom: 15px;
@@ -107,9 +108,16 @@ form {
     border-radius: 25px;
     line-height: 1;
     cursor: pointer;
+    transition: all 0.35s;
 }
 
 #submit-button:hover {
     /* background-color: lightseagreen; */
     box-shadow: 0px 1px 20px #b6354e;
 }
+
+#logo{
+    width: 150px;
+    border-radius: 25px;
+}
+
