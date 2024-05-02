@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: dropdownOpen 0.3s;
+        }
+
+        .dropdown:hover .dropdown-content a {
+            color: black;
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content a:hover span {
+            background-color: transparent;
+        }
+
+        .dropdown:hover .dropdown-content a span {
+            color: black;
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content a span:hover {
+            background-color: transparent;
+        }
+
+        .dropdown:hover .dropdown-content a span:hover strong {
+            background-color: transparent;
+        }
+
+        .dropdown:hover .dropdown-content a strong {
+            color: black;
+            background-color: #f1f1f1;
+        }
+
+        @keyframes dropdownOpen {
+            0 {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required class="dropdown">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <button type="submit">Login</button>
+    </div>
+</body>
+</html>

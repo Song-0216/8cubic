@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>八立方下单系统</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./pics/logo-touming-1616.ico" type="image/x-icon">
+    <script src="./js/js.js"></script>
 </head>
+
 <body>
     <div class="shell">
         <form action="">
@@ -17,20 +20,29 @@
                     <!-- <div id="w-line-2">欢迎使用</div> -->
                 </div>
                 <div id="input-area">
+                    <div class="input-group f-inp">
+                        <select id="gender" name="gender" required class="no-border">
+                            <option value="">请选择登录身份</option>
+                            <option value="male">品牌方</option>
+                            <option value="female">工厂方</option>
+                            <option value="other">八立方</option>
+                        </select>
+                    </div>
                     <div class="f-inp">
                         <input type="text" placeholder="用户名" required>
                     </div>
                     <div class="f-inp">
                         <input type="password" placeholder="密码" required>
-                </div>
-                <div id="submit-button-cvr">
-                    <button type="submit" id="submit-button">登录 </button>
-                </div>
-                
+                    </div>
+                    <div id="submit-button-cvr">
+                        <button type="submit" id="submit-button">登录 </button>
+                    </div>
+
                 </div>
             </div>
         </form>
-        
+
     </div>
 </body>
+
 </html>
